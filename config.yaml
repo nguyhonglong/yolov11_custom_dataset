@@ -1,0 +1,34 @@
+# Model configurations
+model:
+  path: "models/yolo11m.pt"  # Path to the base model
+  # Other available models:
+  # - "yolov8n.pt"  # YOLOv8 Nano
+  # - "yolov8s.pt"  # YOLOv8 Small
+  # - "yolov8m.pt"  # YOLOv8 Medium
+  # - "yolov8l.pt"  # YOLOv8 Large
+  # - "yolov8x.pt"  # YOLOv8 Extra Large
+
+# Dataset configurations
+data:
+  path: "dataset_custom.yaml"  # Path to dataset configuration file
+  image_size: 640  # Input image size
+  
+# Training configurations
+train:
+  epochs: 100
+  batch_size: 16
+  device: "cpu"  # Options: "cpu", "0" (first GPU), "0,1" (multiple GPUs)
+  workers: 1     # Number of worker threads for data loading
+
+# Augmentation configurations (optional)
+augmentation:
+  hsv_h: 0.015   # HSV-Hue augmentation
+  hsv_s: 0.7     # HSV-Saturation augmentation
+  hsv_v: 0.4     # HSV-Value augmentation
+  degrees: 0.0    # Rotation (+/- deg)
+  translate: 0.1  # Translation (+/- fraction)
+  scale: 0.5     # Scale (+/- gain)
+  shear: 0.0     # Shear (+/- deg)
+  perspective: 0.0  # Perspective (+/- fraction)
+  flipud: 0.0    # Vertical flip probability
+  fliplr: 0.5    # Horizontal flip probability

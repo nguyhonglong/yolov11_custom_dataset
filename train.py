@@ -1,6 +1,19 @@
 from ultralytics import YOLO
+import yaml
 
-model = YOLO("yolov8n.pt")
+# Load configuration
+with open('config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
 
-model.train(data="dataset_custom.yaml", epochs=100, imgsz=640,
-             batch=16, device=0, workers = 1)
+# Initialize model
+model = YOLO(config['model']['path'])
+
+# Train model
+model.train(
+    data=config['data']['path'],
+    epochs=config['train']['epochs'],
+    imgsz=config['data']['image_size'],
+    batch=config['train']['batch_size'],
+    device=config['train']['device'],
+    workers=config['train']['workers']
+)
