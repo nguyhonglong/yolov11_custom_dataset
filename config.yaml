@@ -10,7 +10,7 @@ model:
 
 # Dataset configurations
 data:
-  path: "yaml/fog.yaml"  # Path to dataset configuration file
+  path: "fog.yaml"  # Path to dataset configuration file
   image_size: 640  # Input image size
   
 # Training configurations

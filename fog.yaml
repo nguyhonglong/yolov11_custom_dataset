@@ -1,0 +1,5 @@
+train: ../splitted_dataset/train
+val: ../splitted_dataset/val
+test: ../splitted_dataset/test 
+nc: 6
+names: [ "car", "person", "motorcycle", "bus", "truck", "bicycle" ]

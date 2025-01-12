@@ -1,5 +1,0 @@
-train: D:/yolov11_custom_dataset/splitted_dataset/train
-val: D:/yolov11_custom_dataset/splitted_dataset/val
-test: D:/yolov11_custom_dataset/splitted_dataset/test 
-nc: 6
-names: [ "car", "person", "motorcycle", "bus", "truck", "bicycle" ]
