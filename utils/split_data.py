@@ -38,7 +38,7 @@ def split_data(source_path, destination_path, train_ratio=0.7, val_ratio=0.2):
             name_without_ext = os.path.splitext(filename)[0]
             
             # Đường dẫn file label tương ứng
-            label_path = os.path.join(source_path, "fog_YOLO_darknet2", f"{name_without_ext}.txt")
+            label_path = os.path.join(source_path, "Fog_YOLO_darknet2", f"{name_without_ext}.txt")
             
             # Copy ảnh
             dst_img = os.path.join(destination_path, f"{subset}/images", filename)
