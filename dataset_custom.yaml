@@ -1,5 +1,5 @@
-train: 
-val: 
-test: 
+train: /content/yolov11_custom_dataset/dataset/train
+val: /content/yolov11_custom_dataset/dataset/val
+test: /content/yolov11_custom_dataset/dataset/test 
 nc: 6
 names: [ "bicycle", "bus", "car", "motorcycle", "person", "truck" ]
