@@ -10,14 +10,14 @@ model:
 
 # Dataset configurations
 data:
-  path: "dataset_custom.yaml"  # Path to dataset configuration file
+  path: "yaml/fog.yaml"  # Path to dataset configuration file
   image_size: 640  # Input image size
   
 # Training configurations
 train:
   epochs: 100
   batch_size: 16
-  device: "cpu"  # Options: "cpu", "0" (first GPU), "0,1" (multiple GPUs)
+  device: 0  # Options: "cpu", "0" (first GPU), "0,1" (multiple GPUs)
   workers: 1     # Number of worker threads for data loading
 
 # Augmentation configurations (optional)

@@ -62,10 +62,10 @@ def split_data(source_path, destination_path, train_ratio=0.7, val_ratio=0.2):
 
 def main():
     # Đường dẫn thư mục nguồn chứa ảnh và labels
-    source_path = "fog/fog"  # Thay đổi đường dẫn này
+    source_path = "path/to/your/source/dataset"  # Replace with your source dataset path
     
     # Đường dẫn thư mục đích để lưu các tập train/val/test
-    destination_path = "dataset"  # Thay đổi đường dẫn này
+    destination_path = "D:/yolov11_custom_dataset/splitted_dataset"
     
     # Tạo các thư mục cần thiết
     create_directories(destination_path)
